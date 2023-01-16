@@ -1,0 +1,28 @@
+body{margin:0;}
+main{
+    width: 80vw;
+    min-height: 100vh;
+    background-color: #db8484;
+    margin: 0 auto;    
+}
+header{
+    height: 10vh;
+    background-color: #658d37;
+}
+section{
+    display: flex;
+    min-height: 85vh;
+    background-color: #064d7c;
+}
+section>aside{
+    width:10vw;
+    background-color: #9226a0;
+}
+section>article{
+    width: 90vw;
+    background-color: #b1ae14;
+}
+footer{
+    height: 5vh;
+    background-color: #14777e;
+}

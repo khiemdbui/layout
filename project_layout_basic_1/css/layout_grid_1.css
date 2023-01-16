@@ -1,0 +1,12 @@
+#main{
+    display: grid;
+    width: 80vw;
+    height: 10vh;
+    background-color: #e99a9a;
+    grid-template-columns: 10vw 20vw auto;       
+}
+.item{
+    height: 4vh;    
+    background-color: #2b864e;
+    margin:0.5vw;
+}

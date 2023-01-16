@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    margin:auto;
+    width: 80vw;
+    height: 10vh;
+    background-color: #e99a9a;
+    grid-template-columns: 10vw 70vw;       
+}
+.item:nth-child(1){
+    height: 10vh;    
+    background-color: #2b864e;
+    grid-column: 1/ span 2;
+}
+.item:nth-child(2){
+    min-height: 85vh;    
+    background-color: #2b3986;
+    grid-column: 1;
+}
+.item:nth-child(3){
+    min-height: 85vh;    
+    background-color: #7b2b86;
+    grid-column: 2;
+}
+.item:nth-child(4){
+    height: 5vh;    
+    background-color: #86842b;
+    grid-column: 1/ span 2;
+}
