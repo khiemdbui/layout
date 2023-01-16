@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- pseudo class: hover -->
+    <style>
+        /*ap dung dinh dang cho div co id=menu*/
+        div#menu{
+            width:40vw;
+            height: 5vh;
+            background-color: #469986;
+            line-height: 5vh;
+        }
+        /*combinator: ap dung cho span nam trong div co id=menu*/
+        div#menu span{
+            padding:5px;
+            background-color: #dea748;
+            border-radius: 5px;
+            margin-right: 2px;
+        }
+        /*pseudo class: ap dung cho tag span khi re chuot len va span nay phai 
+          nam trong div co id=menu
+        */
+        div#menu span:hover{
+            background-color: #de8448;
+            cursor: pointer;
+        }
+        /*pseudo class: ap dung cho tag span khi div co id=menu duoc re chuot vao*/
+        div#menu:hover span{
+            color:green;
+            font-weight: bold;
+        }
+    </style>
+    <div id="menu">
+        <span>Home</span>
+        <span>about</span>
+        <span>contact</span>
+    </div>
+    <script src="js/ck.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div#content {
+            border: 1px dashed #339900;
+            width: 30vw;
+            height: 40vh;
+        }
+
+        /*ap dung dinh dang cho tat ca p nam trong div co id=content*/
+        /*
+        div#content p:nth-child(n){
+            background-color: #e0c53e;
+        }
+        */
+        /*ap dung dinh dang cho p nam theo thu tu la 'chan' dem tu tren xuong 
+            la con cua div co id=content
+        */
+        div#content p:nth-child(2n) {
+            background-color: #e0c53e;
+        }
+
+        /*ap dung dinh dang cho p nam theo thu tu la 'le' dem tu tren xuong 
+            la con cua div co id=content
+        */
+        div#content p:nth-child(2n-1) {
+            background-color: #1eaf2a;
+        }
+
+        /*ap dung dinh dang cho p o vi tri thu 2 va thu 5 nam trong div co id=content*/
+        div#content p:nth-child(2),
+        p:nth-child(5) {
+            text-decoration: underline;
+        }
+    </style>
+    <div id="content">
+        <p>content 1</p>
+        <p>content 2</p>
+        <p>content 3</p>
+        <p>content 4</p>
+        <p>content 5</p>
+        <p>content 6</p>
+    </div>
+    <script src="js/ck.js"></script>
+</body>
+
+</html>

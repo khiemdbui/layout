@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- combinator: id & name & class  -->
+    <style>
+        div {
+            font-size: 12px;
+        }
+
+        #d1 {
+            color: blue;
+        }
+
+        .content {
+            font-style: italic;
+        }
+        /* ap dung : div co id =d1 dong thoi co su dung class=content*/
+        div#d1.content{
+            background-color: #9e00a6;
+        }
+    </style>
+    <div id="d1">div voi id=d1</div>
+    <div id="d1" class="content">div voi id=d1 class=content</div>
+    <div>div noi dung</div>
+    <script src="js/ck.js"></script>
+</body>
+
+</html>

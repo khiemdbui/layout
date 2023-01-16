@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- combinator: child > -->
+    <style>
+        #d1 {
+            font-size: 14px;
+        }
+
+        /* span nam truc tiep ben trong tag co id=d1*/
+        #d1>span {
+            color: blue;
+        }
+        /*a con span va span con tag co id=d1*/
+        #d1>span>a{
+            text-decoration: none;
+            color:green;
+        }
+    </style>
+    <div id="d1">
+        <p><span>content span nam trong p va p trong div</span></p>
+        <span>span chua trong div truc tiep</span>
+    </div>
+    <div id="d1">
+        <span>link </span>
+        <span>vao google:<a href="http://google.com">google.com</a></span>
+    </div>
+    <script src="js/ck.js"></script>
+</body>
+
+</html>
